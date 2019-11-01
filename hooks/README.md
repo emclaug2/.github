@@ -1,6 +1,6 @@
 # Integration Steps
 Git needs to be configured locally to start using these hooks.
-These commands need to be added for all Git profiles.
+These commands need to be ran for all Git profiles.
 
 
 From a new terminal:
