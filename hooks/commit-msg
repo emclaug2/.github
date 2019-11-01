@@ -144,8 +144,8 @@ validate_commit_message() {
   # 2. Limit the subject line to 50 characters
   # ------------------------------------------------------------------------------
 
-  test "${#COMMIT_SUBJECT}" -le 50
-  test $? -eq 0 || add_warning 1 "Limit the subject line to 50 characters (${#COMMIT_SUBJECT} chars)"
+  # test "${#COMMIT_SUBJECT}" -le 50
+  # test $? -eq 0 || add_warning 1 "Limit the subject line to 50 characters (${#COMMIT_SUBJECT} chars)"
 
   # 3. Capitalize the subject line
   # ------------------------------------------------------------------------------
@@ -174,6 +174,7 @@ validate_commit_message() {
     corrected      corrects      correcting
     created        creates       creating
     deleted        deletes       deleting
+    disabled       disables      disabling
     fixed          fixes         fixing
     implemented    implements    implementing
     improved       improves      improving
@@ -206,13 +207,14 @@ validate_commit_message() {
   # 6. Wrap the body at 72 characters
   # ------------------------------------------------------------------------------
 
-  URL_REGEX='^[[:blank:]]*(https?|ftp|file)://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]'
+  # URL_REGEX='^[[:blank:]]*(https?|ftp|file)://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]'
 
-  for i in "${!COMMIT_MSG_LINES[@]}"; do
-    LINE_NUMBER=$((i+1))
-    test "${#COMMIT_MSG_LINES[$i]}" -le 72 || [[ ${COMMIT_MSG_LINES[$i]} =~ $URL_REGEX ]]
-    test $? -eq 0 || add_warning $LINE_NUMBER "Wrap the body at 72 characters (${#COMMIT_MSG_LINES[$i]} chars)"
-  done
+  # for i in "${!COMMIT_MSG_LINES[@]}"; do
+    # Start counting at second line of commit message
+  #  LINE_NUMBER=$((i+1))
+  #  test "${#COMMIT_MSG_LINES[$i]}" -le 72 || [[ ${COMMIT_MSG_LINES[$i]} =~ $URL_REGEX ]]
+  #  test $? -eq 0 || add_warning $LINE_NUMBER "Wrap the body at 72 characters (${#COMMIT_MSG_LINES[$i]} chars)"
+  # done
 
   # 7. Use the body to explain what and why vs. how
   # ------------------------------------------------------------------------------
