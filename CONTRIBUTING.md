@@ -9,11 +9,12 @@ Please read [the document](https://github.com/pxblue/.github/blob/master/CODE_OF
 
 ## Contributions
 
-There are many ways to contribute to PX Blue and code contribution is one aspect of it. Documentation improvements are as important as code changes.
+There are many ways to contribute to PX Blue (code contribution is just one aspect of it). Here are some ways you can help:
 
-- Reporting and fixing bugs, adding features, and improving our documentation.
-- Add new code examples or new component.
-- Help translate and update API documentation.
+- Reporting and/or fixing bugs
+- Suggesting and/or implementing new features
+- Adding to or improving our documentation
+- Adding new code examples, components, or libraries
 
 ## Your first Pull Request
 
@@ -21,11 +22,18 @@ If you decide to fix an issue, please check the comments in the issues section o
 
 ## Branch Naming and Pull Request Workflow
 
+We have an established convention for branch naming and commit messages following the rules below. We ask that you also adhere to these rules to maximize the likelihood of your submission being accepted.
+
+> **Pro Tip:** to automatically enforce these conventions, you can use our [git hooks](https://github.com/pxblue/.github/tree/master/hooks) configuration.
+
 ### Branch Naming Conventions:
 
-Prefixed with feature or bug and use dashes as the delimiter.
-Only use lowercase in branch names.
-Be accurate as possible in branch naming.
+Branch names should:
+
+- be prefixed with `feature/` or `bug/` depending on what you're working on
+- use only lowercase alphanumeric characters
+- use dashes as the word separator (no spaces or underscores)
+- be concise but descriptive
 
 ```
 feature/my-topic-branch or bug/fix-topic-branch
@@ -33,25 +41,33 @@ feature/my-topic-branch or bug/fix-topic-branch
 
 ### Commit Message Conventions:
 
-Capitalize the subject line and do not end the subject with a period.
-Use the imperative mood in the subject line. `This commit will <your commit message>`.
+Commit messages should:
+
+- capitalize the subject line
+- **not** end the subject with a period
+- use the imperative mood in the subject line, e.g., `Add capability X` instead of `Added capability X`
+- be concise but descriptive
 
 ### Pull Request:
 
-- Bug branch pull request description will reference the issue# fixed.
-- Feature branch pull request description will explain what the feature is and changes proposed.
+Pull requests should:
+
+- Target `dev` branch
+- Have a clear and descriptive title
+- Adhere to the PX Blue Pull Request template
+- Reference any issue(s) that are fixed (i.e., 'Fixes #XX')
+- Briefly describe at a high level what is being proposed
+- Use a bulleted list to highlight the key changes/additions
 
 ## Sending a Pull Request
 
-PX Blue is a community with many projects, so pull requests are always welcome. If you are working on a complete change, please open an issue first to discuss it with the maintainers of PX Blue. Keep pull requests small to have the best chance of getting accepted.
+PX Blue is a community with many projects, so pull requests are always welcome. If you are planning to work on something, please open an issue first (bug or feature request) to discuss it with the maintainers of PX Blue. Keep pull requests small to have the best chance of getting accepted. Several small pull requests are easier to review than one large one.
 
-```
-Don't bundle more than one feature or bug fix per pull request.
-```
+> **Pro Tip:**: Don't bundle more than one feature or bug fix per pull request.
 
 ## Get started
 
-1. Fork the PX Blue repository to your GitHub account.
+1. Fork the relevant PX Blue repository to your GitHub account.
 
 2. Clone the fork repository to your local machine and add upstream remote:
 
@@ -77,51 +93,37 @@ yarn install
 
 ```
 git checkout -b feature/my-topic-branch
-Or
+```
+
+or
+
+```
 git checkout -b bug/my-topic-branch
-```
-
-6. Make changes, commit and push to your fork:
 
 ```
-git push –set upstream origin <your branch name>
+
+6. Make changes and verify the code.
+   > Pull requests will only be accepted if they pass the following mandatory checks:
+
+- the code is formatted via `yarn prettier` with the [PX Blue prettier](https://github.com/pxblue/code-standards/tree/dev/prettier-config) configuration
+- the code is linted via `yarn lint` using the [PX Blue ESLint](https://github.com/pxblue/code-standards/tree/dev/eslint-config) configuration
+- the code builds successfully via `yarn build` (where appropriate).
+- the code passes all tests via `yarn test` (some repositories include additional tests that must also pass).
+- the branch name, commit messages, and pull request formats adhere to the requirements described above.
+
+7. Commit and push to your fork:
+
+```
+git push –set-upstream origin <your branch name>
 ```
 
-7. Go to [the repository](https://github.com/pxblue) and make a Pull Request.
+8. Go to the proper [PX Blue repository](https://github.com/pxblue) and make a Pull Request.
 
-The maintainers of PX Blue will be notified and will review your pull request and either merge it, request changes to it or close it with an explanation.
-
-### How to increase the chance of Pull Requests being accepted
-
-Because we will only merge Pull Request for which all tests pass. The following items also need to be checked.
-
-- If TypeScript declarations were changed, `yarn typescript`
-- The code is formatted `yarn prettier`
-- The code is linted `yarn lint`
-- The code builds `yarn build`
-- The code passes tests `yarn test`
-- The Branch, Commit Message and Pull Request follows our pattern.
-
-### Verify the following:
-
-- The branch is targeted at `master` for ongoing development. We do our best to keep `master` clean with all tests passing. Code that lands in `master` must be compatible with the latest stable code. It may contain additional features, but no breaking changes. We should be able to release a new minor version from the tip of `master` at any time.
-- If a feature is being added:
-
-  - Explain why the feature needs to be added.
-
-- When adding new features or modifying existing, please include tests to confirm the new behavior.
-- If props were added or prop types were changed, the TypeScript declarations are updated.
-
-## Contribution Prerequisites
-
-- Node v10.17.0+
-- Yarn v1.17.0+
-- Latest PX Blue NPM packages installed.
+The maintainers of PX Blue will be notified and will review your pull request and either merge it, request changes to it, or close it with an explanation.
 
 ## Get support from PX Blue
 
-`TO-DO`
-github.com/pxblue/.github/blob/master/SUPPORT.md
+[Contact Us](https://pxblue.github.io/community/contactus)
 
 ## Roadmap
 
@@ -129,4 +131,4 @@ Want to know where PX Blue is heading or ideas on where you could contribute, ta
 
 ## License
 
-By contributing to the PX Blue GitHub Organization, you agree to license your contribution under the MIT license.
+By contributing to the PX Blue GitHub organization, you agree to license your contribution under the BSD-3-Clause license.
