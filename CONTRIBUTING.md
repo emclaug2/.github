@@ -4,8 +4,7 @@ Thank you for helping to make PX Blue projects great and being a part of the PX 
 
 ## Code of Conduct
 
-PX Blue has adopted the [Contributor Covenant](https://www.contributor-covenant.org/) as its Code of Conduct, and we expect project participants to adhere to it.
-Please read [the document](https://github.com/pxblue/.github/blob/master/CODE_OF_CONDUCT.md) so that you can understand what will and will not be tolerated.
+PX Blue has adopted the [Contributor Covenant](https://www.contributor-covenant.org/) as its Code of Conduct, and we expect project participants to adhere to it. Please read [the document](https://github.com/pxblue/.github/blob/master/CODE_OF_CONDUCT.md) so that you can understand what will and will not be tolerated.
 
 ## Contributions
 
@@ -18,7 +17,7 @@ There are many ways to contribute to PX Blue (code contribution is just one aspe
 
 ## Your first Pull Request
 
-If you decide to fix an issue, please check the comments in the issues section on the repository in case somebody is working on a fix. If nobody is working on it, please leave a comment stating that you have started to work on it so other people don’t accidentally duplicate your effort. If you decide to fix an issue that has not been logged, please log the issue first.
+If you decide to fix an issue, please check the comments in the issues section on the repository to see if somebody is working on a fix. If nobody is working on it, please leave a comment stating that you have started to work on it so other people don’t accidentally duplicate your effort. If you decide to fix an issue that has not been logged, please log the issue first and leave a comment.
 
 ## Branch Naming and Pull Request Workflow
 
@@ -103,7 +102,7 @@ git checkout -b bug/my-topic-branch
 ```
 
 6. Make changes and verify the code.
-   > Pull requests will only be accepted if they pass the following mandatory checks:
+Pull requests will only be accepted if they pass the following mandatory checks:
 
 - the code is formatted via `yarn prettier` with the [PX Blue prettier](https://github.com/pxblue/code-standards/tree/dev/prettier-config) configuration
 - the code is linted via `yarn lint` using the [PX Blue ESLint](https://github.com/pxblue/code-standards/tree/dev/eslint-config) configuration
@@ -120,6 +119,8 @@ git push –set-upstream origin <your branch name>
 8. Go to the proper [PX Blue repository](https://github.com/pxblue) and make a Pull Request.
 
 The maintainers of PX Blue will be notified and will review your pull request and either merge it, request changes to it, or close it with an explanation.
+
+> The `master` branch in PX Blue repositories represents the latest released/published code. The `dev` branch is used to hold the latest updates and features that are waiting to be released.
 
 ## Get support from PX Blue
 
