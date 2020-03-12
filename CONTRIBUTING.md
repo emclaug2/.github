@@ -131,4 +131,4 @@ Want to know where PX Blue is heading or ideas on where you could contribute, ta
 
 ## License
 
-By contributing to the PX Blue GitHub organization, you agree to license your contribution under the BSD-3-Clause license.
+By contributing to the PX Blue GitHub organization, you agree to license your contribution under the [BSD-3-Clause license](https://github.com/pxblue/.github/blob/master/LICENSE.md).
