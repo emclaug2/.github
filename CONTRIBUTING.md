@@ -102,7 +102,7 @@ git checkout -b bug/my-topic-branch
 ```
 
 6. Make changes and verify the code.
-Pull requests will only be accepted if they pass the following mandatory checks:
+   Pull requests will only be accepted if they pass the following mandatory checks:
 
 - the code is formatted via `yarn prettier` with the [PX Blue prettier](https://github.com/pxblue/code-standards/tree/dev/prettier-config) configuration
 - the code is linted via `yarn lint` using the [PX Blue ESLint](https://github.com/pxblue/code-standards/tree/dev/eslint-config) configuration
@@ -132,4 +132,4 @@ Want to know where PX Blue is heading or ideas on where you could contribute, ta
 
 ## License
 
-By contributing to the PX Blue GitHub organization, you agree to license your contribution under the [BSD-3-Clause license](https://github.com/pxblue/.github/blob/master/LICENSE.md).
+By contributing to the PX Blue GitHub organization, you agree to license your contribution under the [BSD-3-Clause license](https://github.com/pxblue/.github/blob/master/LICENSE).
