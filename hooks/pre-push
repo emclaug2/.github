@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+LC_ALL=C
+
+local_branch="$(git rev-parse --abbrev-ref HEAD)" || {
+    echo -e "Error enforcing Git Hooks: Cannot enforce branch names on new repo."
+    exit 0
+}
+
+
+valid_branch_prefix="^(refactor|feature|bug|experiment|release|hotfix)\/[a-z0-9-]+$"
+whitelist="(^dev$|^master$|^ionic$|^angular$|^react$|^reactnative$)"
+
+message="I am called, you have pushed."
+echo -e "$message"
+
+exit 0
