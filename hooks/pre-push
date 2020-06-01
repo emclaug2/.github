@@ -10,7 +10,7 @@ local_branch="$(git rev-parse --abbrev-ref HEAD)" || {
 valid_branch_prefix="^(refactor|feature|bug|experiment|release|hotfix)\/[a-z0-9-]+$"
 whitelist="(^dev$|^master$|^ionic$|^angular$|^react$|^reactnative$)"
 
-message="I am called, you have pushed."
+message="I am called, you have pushed. "
 echo -e "$message"
 
 exit 0
