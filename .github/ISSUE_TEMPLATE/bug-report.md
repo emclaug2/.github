@@ -18,24 +18,7 @@ assignees: ''
 #### Screenshots or links to minimum reproduction example
 
 
-#### What is your environment?
-<!-- Checked checkbox should look like this: [x] -->
- Framework
-- [ ] Angular
-- [ ] React
-- [ ] Ionic
-- [ ] React Native
-
- Browser
-- [ ] Internet Explorer
-- [ ] Edge
-- [ ] Safari
-- [ ] Chrome
-- [ ] Firefox
-
- Operating System
-- [ ] MacOS
-- [ ] Windows
-- [ ] Other
+#### Environment
+<!-- Describe any relevant environment information (e.g., Operating System, Library version number, browser used, etc.) where the issue was discovered -->
 		
 #### Anything else to add?

@@ -2,7 +2,10 @@
 Fixes # .
 
 <!-- Include a bulleted list summarizing the main changes you have made in this PR -->
-Changes proposed in this Pull Request:
+#### Changes proposed in this Pull Request:
 - 
 - 
 - 
+
+<!-- Include screenshots if they will help illustrate the changes in this PR -->
+#### Screenshots:
