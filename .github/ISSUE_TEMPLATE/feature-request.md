@@ -14,4 +14,4 @@ assignees: ''
 #### Is this request related to a current issue?
 
 #### Additional Context
-Add any other context or screenshots about the feature request here.
+<!-- Add any other context or screenshots about the feature request here. -->
